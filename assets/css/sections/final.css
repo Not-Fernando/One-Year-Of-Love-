@@ -154,3 +154,239 @@
     }
 
 }
+
+
+/* =========================
+   PERSONAJES FINALES
+========================= */
+
+.final-character{
+
+    position:absolute;
+
+    bottom:0;
+
+    z-index:1;
+
+    pointer-events:none;
+
+    transition:.4s;
+
+}
+
+/* Bri */
+
+.final-bri{
+
+    left:6%;
+
+    width:350px;
+
+    animation:
+    floatBri 4s ease-in-out infinite;
+
+}
+
+/* Fer */
+
+.final-fer{
+
+    right:6%;
+
+    width:390px;
+
+    animation:
+    floatFer 4s ease-in-out infinite;
+
+}
+
+/* Animaciones */
+
+@keyframes floatBri{
+
+    0%,100%{
+
+        transform:
+        translateY(0px);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(-15px);
+
+    }
+
+}
+
+@keyframes floatFer{
+
+    0%,100%{
+
+        transform:
+        translateY(-10px);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(5px);
+
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE FINAL
+========================= */
+
+@media(max-width:992px){
+
+    .final-content{
+
+        max-width:90%;
+
+    }
+
+    .final-content h2{
+
+        font-size:3.8rem;
+
+    }
+
+    .final-bri{
+
+        width:180px;
+
+        left:-20px;
+
+        opacity:.4;
+
+    }
+
+    .final-fer{
+
+        width:200px;
+
+        right:-20px;
+
+        opacity:.4;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    #final{
+
+        min-height:auto;
+
+        padding:90px 20px;
+
+    }
+
+    .final-content h2{
+
+        font-size:3rem;
+
+    }
+
+    .final-content p{
+
+        font-size:1rem;
+
+    }
+
+    .final-signature{
+
+        font-size:2rem;
+
+    }
+
+    .final-date{
+
+        letter-spacing:3px;
+
+        font-size:.85rem;
+
+    }
+
+    .final-bri{
+
+        width:130px;
+
+        left:-30px;
+
+        opacity:.25;
+
+    }
+
+    .final-fer{
+
+        width:150px;
+
+        right:-30px;
+
+        opacity:.25;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .final-content h2{
+
+        font-size:2.3rem;
+
+        line-height:1.2;
+
+    }
+
+    .final-content p{
+
+        font-size:.95rem;
+
+        line-height:1.8;
+
+    }
+
+    .final-signature{
+
+        font-size:1.7rem;
+
+    }
+
+    .final-date{
+
+        font-size:.75rem;
+
+        letter-spacing:2px;
+
+    }
+
+    .final-bri{
+
+        width:100px;
+
+        left:-25px;
+
+        opacity:.18;
+
+    }
+
+    .final-fer{
+
+        width:120px;
+
+        right:-25px;
+
+        opacity:.18;
+
+    }
+
+}

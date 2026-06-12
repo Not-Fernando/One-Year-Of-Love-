@@ -206,3 +206,118 @@
 
 }
 
+
+
+/* =========================
+   RESPONSIVE TIMELINE
+========================= */
+
+@media (max-width:768px){
+
+    .timeline::before{
+
+        display:none;
+
+    }
+
+    .timeline-item{
+
+        flex-direction:column;
+
+        gap:25px;
+
+        margin-bottom:80px;
+
+    }
+
+    .timeline-photo{
+
+        width:100%;
+
+        max-width:400px;
+
+    }
+
+    .timeline-content{
+
+        width:100%;
+
+        padding:30px;
+
+        text-align:center;
+
+    }
+
+    .timeline-gallery img,
+    .timeline-gallery video{
+
+        height:380px;
+
+    }
+
+    .timeline-header{
+
+        margin-bottom:60px;
+
+    }
+
+    .timeline-subtitle{
+
+        font-size:.75rem;
+
+        letter-spacing:2px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .timeline-photo{
+
+        max-width:100%;
+
+    }
+
+    .timeline-gallery img,
+    .timeline-gallery video{
+
+        height:280px;
+
+        border-radius:15px;
+
+    }
+
+    .timeline-content{
+
+        padding:25px;
+
+        border-radius:20px;
+
+    }
+
+    .timeline-content h3{
+
+        font-size:1.5rem;
+
+    }
+
+    .timeline-content p{
+
+        font-size:.95rem;
+
+        line-height:1.8;
+
+    }
+
+    .timeline-btn{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:1.1rem;
+
+    }
+
+}

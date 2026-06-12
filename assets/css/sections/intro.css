@@ -85,3 +85,136 @@
     box-shadow:0 15px 35px rgba(122,62,72,.30);
 
 }
+
+#intro{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.intro-fer{
+
+    position:absolute;
+
+    left:-250px;
+
+    bottom:0;
+
+    width:420px;
+
+    z-index:1;
+
+    animation:
+    floatFer 4s ease-in-out infinite;
+
+}
+
+.intro-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+@keyframes floatFer{
+
+    0%,100%{
+
+        transform:
+        translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(-15px);
+
+    }
+
+}
+
+/* =========================
+   RESPONSIVE INTRO
+========================= */
+
+@media (max-width: 768px){
+
+    #intro{
+
+        padding:80px 20px;
+
+        min-height:100vh;
+
+    }
+
+    .intro-fer{
+
+        width:180px;
+
+        left:-60px;
+
+        opacity:.35;
+
+    }
+
+    .intro-small{
+
+        font-size:.75rem;
+
+        letter-spacing:2px;
+
+    }
+
+    .intro-title{
+
+        font-size:3rem;
+
+        line-height:1.1;
+
+    }
+
+    .intro-description{
+
+        font-size:1.05rem;
+
+    }
+
+    .intro-btn{
+
+        padding:14px 30px;
+
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .intro-fer{
+
+        width:250px;
+
+        left:-40px;
+
+        bottom:20px;
+
+        opacity:.25;
+
+    }
+
+    .intro-title{
+
+        font-size:2.4rem;
+
+    }
+
+    .intro-description{
+
+        font-size:1rem;
+
+    }
+
+}

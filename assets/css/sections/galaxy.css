@@ -53,3 +53,66 @@
     height:100vh;
 
 }
+
+
+/* =========================
+   RESPONSIVE GALAXY
+========================= */
+
+@media (max-width:768px){
+
+    .galaxy-header{
+
+        width:90%;
+
+        top:40px;
+
+    }
+
+    .galaxy-subtitle{
+
+        font-size:.75rem;
+
+        letter-spacing:2px;
+
+    }
+
+    .galaxy-header h2{
+
+        font-size:2.5rem;
+
+        line-height:1.2;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    #galaxy{
+
+        min-height:80vh;
+
+    }
+
+    #galaxy-container{
+
+        height:80vh;
+
+    }
+
+    .galaxy-header{
+
+        width:95%;
+
+        top:30px;
+
+    }
+
+    .galaxy-header h2{
+
+        font-size:2rem;
+
+    }
+
+}

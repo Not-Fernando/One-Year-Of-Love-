@@ -73,3 +73,79 @@
     font-size:1.1rem;
 
 }
+
+/* =========================
+   RESPONSIVE BEGINNING
+========================= */
+
+@media (max-width:768px){
+
+    .beginning-container{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .beginning-image{
+
+        height:400px;
+
+        order:-1;
+
+    }
+
+    .beginning-subtitle{
+
+        font-size:.75rem;
+
+        letter-spacing:2px;
+
+    }
+
+    .beginning-text{
+
+        text-align:center;
+
+    }
+
+    .beginning-text h2{
+
+        margin-bottom:20px;
+
+    }
+
+    .beginning-text p{
+
+        font-size:1rem;
+
+        line-height:1.8;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .beginning-image{
+
+        height:300px;
+
+        border-radius:20px;
+
+    }
+
+    .beginning-text h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .beginning-text p{
+
+        font-size:.95rem;
+
+    }
+
+}

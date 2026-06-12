@@ -269,14 +269,29 @@ const textureLoader = new THREE.TextureLoader();
 
 const photos = [
 
-    "assets/img/gallery/photo1.jpg",
-    "assets/img/gallery/photo2.jpg",
-    "assets/img/gallery/photo3.jpg",
-    "assets/img/gallery/photo4.jpg",
-    "assets/img/gallery/photo5.jpg",
-    "assets/img/gallery/photo6.jpg"
-
-    // hasta photo20.jpg
+    "assets/img/gallery/photo1.jpeg",
+    "assets/img/gallery/photo2.jpeg",
+    "assets/img/gallery/photo3.jpeg",
+    "assets/img/gallery/photo4.jpeg",
+    "assets/img/gallery/photo5.jpeg",
+    "assets/img/gallery/photo6.jpeg",
+    "assets/img/gallery/photo7.jpeg",
+    "assets/img/gallery/photo8.jpeg",
+    "assets/img/gallery/photo9.jpeg",
+    "assets/img/gallery/photo10.jpeg",
+    "assets/img/gallery/photo11.jpeg",
+    "assets/img/gallery/photo12.jpeg",
+    "assets/img/gallery/photo13.jpeg",
+    "assets/img/gallery/photo14.jpeg",
+    "assets/img/gallery/photo15.jpeg",
+    "assets/img/gallery/photo16.jpeg",
+    "assets/img/gallery/photo17.jpeg",
+    "assets/img/gallery/photo18.jpeg",
+    "assets/img/gallery/photo19.jpeg",
+    "assets/img/gallery/photo20.jpeg",
+    "assets/img/gallery/photo21.jpeg",
+    "assets/img/gallery/photo22.jpeg",
+    "assets/img/gallery/photo23.jpeg"
 
 ];
 
@@ -370,6 +385,43 @@ document.addEventListener(
             (event.clientY -
             window.innerHeight / 2)
             * 0.001;
+
+    }
+);
+
+document.addEventListener(
+    "touchmove",
+    (event)=>{
+
+        const touch =
+            event.touches[0];
+
+        mouseX =
+            (touch.clientX -
+            window.innerWidth / 2)
+            * 0.001;
+
+        mouseY =
+            (touch.clientY -
+            window.innerHeight / 2)
+            * 0.001;
+
+    }
+);
+
+let touchX = 0;
+
+document.addEventListener(
+    "touchmove",
+    (event)=>{
+
+        const touch =
+            event.touches[0];
+
+        touchX =
+            (touch.clientX /
+            window.innerWidth)
+            - 0.5;
 
     }
 );

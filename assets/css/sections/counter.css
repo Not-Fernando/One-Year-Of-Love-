@@ -73,3 +73,84 @@
     font-size:1.2rem;
 
 }
+
+
+/* =========================
+   RESPONSIVE COUNTER
+========================= */
+
+@media (max-width:768px){
+
+    .counter-subtitle{
+
+        font-size:.75rem;
+
+        letter-spacing:2px;
+
+    }
+
+    #counter h2{
+
+        margin-bottom:50px;
+
+    }
+
+    .counter-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:20px;
+
+    }
+
+    .counter-card{
+
+        padding:30px 15px;
+
+    }
+
+    .counter-card span{
+
+        font-size:2.5rem;
+
+    }
+
+    .counter-message{
+
+        font-size:1.05rem;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .counter-grid{
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+
+    }
+
+    .counter-card{
+
+        padding:25px 15px;
+
+    }
+
+    .counter-card span{
+
+        font-size:2.2rem;
+
+    }
+
+    .counter-message{
+
+        font-size:1rem;
+
+        line-height:1.8;
+
+    }
+
+}
