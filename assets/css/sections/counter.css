@@ -1,0 +1,75 @@
+#counter{
+
+    background:var(--champagne);
+
+    text-align:center;
+
+}
+
+.counter-subtitle{
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    color:var(--antique-rose);
+
+    margin-bottom:20px;
+
+}
+
+#counter h2{
+
+    color:var(--wine);
+
+    margin-bottom:70px;
+
+}
+
+.counter-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-bottom:50px;
+
+}
+
+.counter-card{
+
+    background:white;
+
+    padding:40px 20px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.counter-card span{
+
+    display:block;
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    color:var(--wine);
+
+    margin-bottom:10px;
+
+}
+
+.counter-message{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:1.2rem;
+
+}

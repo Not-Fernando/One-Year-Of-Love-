@@ -1,0 +1,55 @@
+#galaxy{
+
+    position:relative;
+
+    background:#050505;
+
+    overflow:hidden;
+
+    min-height:100vh;
+
+}
+
+.galaxy-header{
+
+    position:absolute;
+
+    top:60px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:10;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.galaxy-subtitle{
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    color:var(--blush);
+
+    margin-bottom:15px;
+
+}
+
+.galaxy-header h2{
+
+    color:white;
+
+}
+
+#galaxy-container{
+
+    width:100%;
+
+    height:100vh;
+
+}

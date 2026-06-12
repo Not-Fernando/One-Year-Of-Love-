@@ -1,0 +1,32 @@
+body{
+    font-family:'Montserrat', sans-serif;
+    color:var(--dark);
+    background:var(--champagne);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+}
+
+h1{
+    font-size:5rem;
+}
+
+h2{
+    font-size:4rem;
+}
+
+h3{
+    font-size:3rem;
+}
+
+p{
+    line-height:1.8;
+    font-size:1.05rem;
+}

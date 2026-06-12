@@ -1,0 +1,156 @@
+#final{
+
+    min-height:70vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        180deg,
+        #7a4a58 0%,
+        var(--wine) 50%,
+        #5f3440 100%
+    );
+
+    color:white;
+
+    padding:120px 0;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Brillo suave de fondo */
+
+#final::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50%;
+
+    top:-250px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    filter:blur(80px);
+
+}
+
+/* Contenedor */
+
+.final-content{
+
+    max-width:800px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* Título */
+
+.final-content h2{
+
+    font-size:5rem;
+
+    line-height:1.1;
+
+    margin-bottom:30px;
+
+    color:white;
+
+    text-shadow:
+    0 5px 20px rgba(0,0,0,.15);
+
+}
+
+/* Texto */
+
+.final-content p{
+
+    margin-bottom:20px;
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    opacity:.95;
+
+}
+
+/* Firma */
+
+.final-signature{
+
+    margin-top:50px;
+
+    font-size:2.5rem;
+
+    font-family:'Cormorant Garamond', serif;
+
+    letter-spacing:2px;
+
+}
+
+/* Fecha */
+
+.final-date{
+
+    margin-top:10px;
+
+    opacity:.75;
+
+    letter-spacing:6px;
+
+    font-size:.95rem;
+
+    text-transform:uppercase;
+
+}
+
+/* Animación suave */
+
+.final-content{
+
+    animation:fadeFinal 1.8s ease;
+
+}
+
+@keyframes fadeFinal{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
